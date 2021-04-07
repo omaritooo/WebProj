@@ -3,7 +3,7 @@ $(document).ready(function(){
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 100) {
-            $(".naver").css('background-color', '#4BA9F4');
+            $(".naver").css('background-color', '#EF528F');
         } else {
             $(".naver").css('background-color', 'transparent');
         }

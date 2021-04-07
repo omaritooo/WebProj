@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="public/build/tailwind.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -60,74 +60,74 @@
             <a class="px-4 py-2 mt-2 text-gray-200 text-white text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4  focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="#">Home</a>
 
-            
+
             <a class="px-4 py-2 mt-2 text-gray-200 text-white text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 xl: md: hover: animate-none  hover:md: hvr-backward  focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="#">Contact Us</a>
             <a class="px-4 py-2 mt-2 text-gray-200 text-white text-sm font-semibold bg-transparent rounded-lg   md:mt-0 md:ml-4  focus:text-gray-900  focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="#">Shop Locator</a>
 
-              <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open"
-                  class="flex flex-row text-gray-200 bg-transparent  items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-200 focus:text-gray-200  focus:outline-none focus:shadow-outline">
-                  <span>Shop</span>
-                  <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                    class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                    <path fill-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                  x-transition:enter-start="transform opacity-0 scale-95"
-                  x-transition:enter-end="transform opacity-100 scale-100"
-                  x-transition:leave="transition ease-in duration-75"
-                  x-transition:leave-start="transform opacity-100 scale-100"
-                  x-transition:leave-end="transform opacity-0 scale-95"
-                  class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
-                  <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#">
-                        <div class="bg-teal-500 text-white rounded-lg p-3">
-                          <i class="fas fa-mobile-alt text-pink-400 text-3xl"></i> </div>
-                        <div class="ml-3 mt-3">
-                          <p class="font-semibold text-pink-400">Phones</p>
-                        </div>
-                      </a>
-  
-                      <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#">
-                        <div class="bg-teal-500 text-white rounded-lg p-3">
-                          <i class="fas fa-tablet-alt text-pink-400 text-xl"></i> </div>
-                        <div class="ml-3 mt-3">
-                          <p class="font-semibold text-pink-400">Tablets</p>
-                        </div>
-                      </a>
-  
-                      <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#">
-                        <div class="bg-teal-500 text-white rounded-lg p-3">
-                          <i class="fas fa-laptop text-pink-400 text-xl"></i>
-  
-                        </div>
-                        <div class="ml-3 mt-3">
-                          <p class="font-semibold text-pink-400">Laptops</p>
-                        </div>
-                      </a>
-                      <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        href="#">
-                        <div class="bg-teal-500 text-white rounded-lg p-3">
-                          <i class="fas fa-headphones text-xl text-pink-400"></i>
-  
-                        </div>
-                        <div class="ml-3 mt-3">
-                          <p class="font-semibold text-pink-400">Accessories</p>
-                        </div>
-                      </a>
-                    </div>
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+              <button @click="open = !open"
+                class="flex flex-row text-gray-200 bg-transparent  items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-200 focus:text-gray-200  focus:outline-none focus:shadow-outline">
+                <span>Shop</span>
+                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
+                <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      href="#">
+                      <div class="bg-teal-500 text-white rounded-lg p-3">
+                        <i class="fas fa-mobile-alt text-pink-400 text-3xl"></i> </div>
+                      <div class="ml-3 mt-3">
+                        <p class="font-semibold text-pink-400">Phones</p>
+                      </div>
+                    </a>
+
+                    <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      href="#">
+                      <div class="bg-teal-500 text-white rounded-lg p-3">
+                        <i class="fas fa-tablet-alt text-pink-400 text-xl"></i> </div>
+                      <div class="ml-3 mt-3">
+                        <p class="font-semibold text-pink-400">Tablets</p>
+                      </div>
+                    </a>
+
+                    <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      href="#">
+                      <div class="bg-teal-500 text-white rounded-lg p-3">
+                        <i class="fas fa-laptop text-pink-400 text-xl"></i>
+
+                      </div>
+                      <div class="ml-3 mt-3">
+                        <p class="font-semibold text-pink-400">Laptops</p>
+                      </div>
+                    </a>
+                    <a class="flex flex row items-start rounded-lg bg-transparent p-2  hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      href="#">
+                      <div class="bg-teal-500 text-white rounded-lg p-3">
+                        <i class="fas fa-headphones text-xl text-pink-400"></i>
+
+                      </div>
+                      <div class="ml-3 mt-3">
+                        <p class="font-semibold text-pink-400">Accessories</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
+            </div>
           </nav>
         </div>
       </div>
@@ -135,310 +135,218 @@
     </div>
     <div class="flex px-10 md:px-64 align-middle  md: py-10">
       <div class=" flex  justify-self-start">
-        
-        <img src="assets/iphone.png" class="w-1/4 md:mt-12 "alt="">
+
+        <img src="assets/iphone.png" class="w-1/4 md:mt-12 " alt="">
 
         <div class="flex flex-col align-middle justify-center  flex-wrap md:w-1/4 ">
-          <button class="mb-6 bg-white py-2 rounded-md text-gray-200 focus:outline-none font-semibold md:w-1/3"  id="buttoner" >Shop Now</button>
-          <p class="font-medium text-white">Lorem ipsum dolor sit amet,  In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.</p>
-          <div class="flex flex-row md: w-1/2 mt-6"><img src="assets/icon_App Store [inverse].png" alt=""> <img src="assets/icon_Google Play (monochrome) [inverse].png" alt=""> </div>
-          
-        </div>        
+          <button class="mb-6 bg-white py-2 rounded-md text-gray-200 focus:outline-none font-semibold md:w-1/3"
+            id="buttoner">Shop Now</button>
+          <p class="font-medium text-white">Lorem ipsum dolor sit amet, In nulla posuere sollicitudin aliquam ultrices
+            sagittis orci a scelerisque.</p>
+          <div class="flex flex-row md: w-1/2 mt-6"><img src="assets/icon_App Store [inverse].png" alt=""> <img
+              src="assets/icon_Google Play (monochrome) [inverse].png" alt=""> </div>
+
+        </div>
       </div>
       <div>
 
       </div>
-     
-     
+
+
     </div>
 
 
-    
+
 </header>
 
 
 <body>
-  <h1 class="dealer text-6xl flex justify-center mt-10 mx-auto ">Deal of the day</h1>
+  <h1 class=" text-6xl flex justify-center mt-10 mx-auto ">   <span class="text-black font-semibold"><span class="font-semibold text-pink-500  ">PAYMENT</span> PLANS</span></h1>
 
-  <!-- <div id="first-secton" class="first-secton  flex justify-center px-4 py-20  ">
-    <div class="flex flex-col justify-center md:flex-row  py-10 px-5 bg-white rounded-md shadow-lg w-3/4 md:max-w-2xl">
-      
-      <div class="text-blue-500 flex flex-col justify-center">
-        <img id="phone-colour"
-          src="https://tradelinestores.s3.amazonaws.com/media/product_images/d264e3ef-68cc-4052-93a3-b525d7fdf583.png"
-          style="width:80vw;" alt="" />
-        <div>
-          <small class="uppercase">choose size</small>
-          <div class="flex flex-wrap md:flex-nowrap gap-1">
-            <a href="javascript:void(0);"
-              class="grid  border bg-red-500 p-3 focus:ring-2 focus:ring-red-900 rounded-full hover:bg-red-700 hover:text-white transition"
-              onclick="document.getElementById('phone-colour').src='https://tradelinestores.s3.amazonaws.com/media/product_images/d264e3ef-68cc-4052-93a3-b525d7fdf583.png'">
-            </a>
-            <a href="javascript:void(0);"
-              class="grid  border bg-gray-200 p-3 focus:ring-2 focus:ring-gray-400 border rounded-full focus:bg-white  transition"
-              onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/3c371da0-e7fd-41f0-840d-389d47ec8691.png'">
-
-            </a>
-            <a href="javascript:void(0);"
-              class="grid  border bg-black p-3 hover:bg-gray-800 rounded-full focus:ring-2 focus:ring-gray-900 hover:text-white transition"
-              onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/fa6ac02c-29f9-4bef-8f30-22a021f11be5.png'">
-
-            </a>
-            <a href="javascript:void(0);"
-              class="grid  border bg-green-300 p-3 hover:bg-green-500 rounded-full focus:ring-2 focus:ring-green-500 hover:text-white transition"
-              onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/a92cbd44-eacd-4e43-aad9-667b826b9940.png'">
-
-            </a>
-            <a href="javascript:void(0);"
-              class="grid  border bg-yellow-200 p-3 hover:bg-yellow-400 rounded-full focus:ring-2 focus:ring-yellow-500 hover:text-white transition"
-              onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/f010e53c-bd92-4c33-b8d8-ea310b01aab8.png'">
-
-            </a>
-
-          </div>
-        </div>
-      </div>
-      <div class="text-blue-500">
-        <small class="uppercase">Mobile Phones</small>
-        <h3 class="uppercase text-black text-2xl font-medium">Apple Iphone 11</h3>
-        <h3 class="text-2xl font-semibold mb-7"><span class="line-through text-gray-300">$300</span> $150 </h3>
-        <small class="text-black">Just the right amount of everything.
-          A new dual‑camera system captures more of what you see and love. The fastest chip ever in a smartphone and
-          all‑day battery life let you do more and charge less. And the highest‑quality video in a smartphone, so your
-          memories look better than ever.</small>
-        <div class="flex gap-0.5 mt-4">
-          <button id="addToCartButton"
-            class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase px-8 py-3">add
-            to cart</button>
-          <button id="likeButton"
-            class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase p-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-              class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
-              <path
-                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
+  <section>
+    <div class="container max-w-full mx-auto py-24 px-6">
 
 
-  </div>
+      <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
+        <div class="relative block flex flex-col md:flex-row items-center">
+          <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4">
+            <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
+              <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+                <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                  Laptop Deals
+                </h1>
+                <h2 class="text-sm text-gray-500 text-center pb-6">Starting from $300</h2>
 
-  
-
-
-  <div class="carousel w-1/2 mx-auto">
-    <div class="carousel-inner p-24 w-1/2">
-        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-        <div class="carousel-item">
-          <div class="flex flex-col justify-center md:flex-row mx-auto py-10 px-5 bg-white rounded-md shadow-lg w-3/4 md:max-w-2xl">
-      
-            <div class="text-blue-500 flex flex-col justify-center">
-              <img id="phone-colour"
-                src="https://tradelinestores.s3.amazonaws.com/media/product_images/d264e3ef-68cc-4052-93a3-b525d7fdf583.png"
-                style="width:80vw;" alt="" />
-              <div>
-                <small class="uppercase">choose size</small>
-                <div class="flex flex-wrap md:flex-nowrap gap-1">
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-red-500 p-3 focus:ring-2 focus:ring-red-900 rounded-full hover:bg-red-700 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src='https://tradelinestores.s3.amazonaws.com/media/product_images/d264e3ef-68cc-4052-93a3-b525d7fdf583.png'">
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-gray-200 p-3 focus:ring-2 focus:ring-gray-400 border rounded-full focus:bg-white  transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/3c371da0-e7fd-41f0-840d-389d47ec8691.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-black p-3 hover:bg-gray-800 rounded-full focus:ring-2 focus:ring-gray-900 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/fa6ac02c-29f9-4bef-8f30-22a021f11be5.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-green-300 p-3 hover:bg-green-500 rounded-full focus:ring-2 focus:ring-green-500 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/a92cbd44-eacd-4e43-aad9-667b826b9940.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-yellow-200 p-3 hover:bg-yellow-400 rounded-full focus:ring-2 focus:ring-yellow-500 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/f010e53c-bd92-4c33-b8d8-ea310b01aab8.png'">
-      
-                  </a>
-      
-                </div>
+                Maintain your portability and productivity with our collection of top of the line laptops
               </div>
-            </div>
-            <div class="text-blue-500">
-              <small class="uppercase">Mobile Phones</small>
-              <h3 class="uppercase text-black text-2xl font-medium">Apple Iphone 11</h3>
-              <h3 class="text-2xl font-semibold mb-7"><span class="line-through text-gray-300">$300</span> $150 </h3>
-              <small class="text-black">Just the right amount of everything.
-                A new dual‑camera system captures more of what you see and love. The fastest chip ever in a smartphone and
-                all‑day battery life let you do more and charge less. And the highest‑quality video in a smartphone, so your
-                memories look better than ever.</small>
-              <div class="flex gap-0.5 mt-4">
-                <button id="addToCartButton"
-                  class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase px-8 py-3">add
-                  to cart</button>
-                <button id="likeButton"
-                  class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase p-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                    class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-                  </svg>
+
+              <div class="flex flex-wrap mt-3 px-6">
+                <ul>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-green-700">
+                      <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">Free Shipping</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-green-700">
+                      <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">Free Setup</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-green-700">
+                      <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">No Interest Installments</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="block flex items-center p-8  uppercase">
+                <button class="mt-3 text-lg font-semibold 
+    bg-pink-500 w-full text-white rounded-lg 
+    px-6 py-3 block shadow-xl hover:bg-pink-700">
+                  Select
                 </button>
               </div>
             </div>
           </div>
-        </div>
-        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item">
-           <div class="flex flex-col justify-center md:flex-row mx-auto py-10 px-5 bg-white rounded-md shadow-lg w-3/4 md:max-w-2xl">
-      
-            <div class="text-blue-500 flex flex-col justify-center">
-              <img id="phone-colour2"
-                src="http://freebiescloud.com/wp-content/uploads/2020/10/4-64.png"
-                style="width:80vw;" alt="" />
-              <div>
-                <small class="uppercase">choose size</small>
-                <div class="flex flex-wrap md:flex-nowrap gap-1">
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-red-500 p-3 focus:ring-2 focus:ring-red-900 rounded-full hover:bg-red-700 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour2').src='http://freebiescloud.com/wp-content/uploads/2020/10/4-64.png'">
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-gray-200 p-3 focus:ring-2 focus:ring-gray-400 border rounded-full focus:bg-white  transition"
-                    onclick="document.getElementById('phone-colour2').src = 'http://freebiescloud.com/wp-content/uploads/2020/10/2-88.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-black p-3 hover:bg-gray-800 rounded-full focus:ring-2 focus:ring-gray-900 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour2').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/fa6ac02c-29f9-4bef-8f30-22a021f11be5.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-green-300 p-3 hover:bg-green-500 rounded-full focus:ring-2 focus:ring-green-500 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour2').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/a92cbd44-eacd-4e43-aad9-667b826b9940.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-yellow-200 p-3 hover:bg-yellow-400 rounded-full focus:ring-2 focus:ring-yellow-500 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour2').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/f010e53c-bd92-4c33-b8d8-ea310b01aab8.png'">
-      
-                  </a>
-      
-                </div>
-              </div>
+          <div class="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
+            <div
+              class="text-sm leading-none rounded-t-lg bg-pink-500 text-white font-semibold uppercase py-4 text-center tracking-wide">
+              Most Popular
             </div>
-            <div class="text-blue-500">
-              <small class="uppercase">Mobile Phones</small>
-              <h3 class="uppercase text-black text-2xl font-medium">Apple Iphone 11</h3>
-              <h3 class="text-2xl font-semibold mb-7"><span class="line-through text-gray-300">$300</span> $150 </h3>
-              <small class="text-black">Just the right amount of everything.
-                A new dual‑camera system captures more of what you see and love. The fastest chip ever in a smartphone and
-                all‑day battery life let you do more and charge less. And the highest‑quality video in a smartphone, so your
-                memories look better than ever.</small>
-              <div class="flex gap-0.5 mt-4">
-                <button id="addToCartButton"
-                  class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase px-8 py-3">add
-                  to cart</button>
-                <button id="likeButton"
-                  class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase p-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                    class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-                  </svg>
-                </button>
-              </div>
-        </div>
-        </div>
-        </div>
-        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item">
-          <div class="flex flex-col justify-center md:flex-row mx-auto py-10 px-5 bg-white rounded-md shadow-lg w-3/4 md:max-w-2xl">
-      
-            <div class="text-blue-500 flex flex-col justify-center">
-              <img id="phone-colour"
-                src="https://tradelinestores.s3.amazonaws.com/media/product_images/d264e3ef-68cc-4052-93a3-b525d7fdf583.png"
-                style="width:80vw;" alt="" />
-              <div>
-                <small class="uppercase">choose size</small>
-                <div class="flex flex-wrap md:flex-nowrap gap-1">
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-red-500 p-3 focus:ring-2 focus:ring-red-900 rounded-full hover:bg-red-700 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src='https://tradelinestores.s3.amazonaws.com/media/product_images/d264e3ef-68cc-4052-93a3-b525d7fdf583.png'">
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-gray-200 p-3 focus:ring-2 focus:ring-gray-400 border rounded-full focus:bg-white  transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/3c371da0-e7fd-41f0-840d-389d47ec8691.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-black p-3 hover:bg-gray-800 rounded-full focus:ring-2 focus:ring-gray-900 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/fa6ac02c-29f9-4bef-8f30-22a021f11be5.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-green-300 p-3 hover:bg-green-500 rounded-full focus:ring-2 focus:ring-green-500 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/a92cbd44-eacd-4e43-aad9-667b826b9940.png'">
-      
-                  </a>
-                  <a href="javascript:void(0);"
-                    class="grid  border bg-yellow-200 p-3 hover:bg-yellow-400 rounded-full focus:ring-2 focus:ring-yellow-500 hover:text-white transition"
-                    onclick="document.getElementById('phone-colour').src = 'https://tradelinestores.s3.amazonaws.com/media/product_images/f010e53c-bd92-4c33-b8d8-ea310b01aab8.png'">
-      
-                  </a>
-      
-                </div>
-              </div>
+            <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+              <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                Phones
+              </h1>
+              <h2 class="text-sm text-gray-500 text-center pb-6"><span class="text-xl">Starting from $19/mo</span> </h2>
+
+              A collection of our phones in mint condition to fit all price brackets
             </div>
-            <div class="text-blue-500">
-              <small class="uppercase">Mobile Phones</small>
-              <h3 class="uppercase text-black text-2xl font-medium">Apple Iphone 11</h3>
-              <h3 class="text-2xl font-semibold mb-7"><span class="line-through text-gray-300">$300</span> $150 </h3>
-              <small class="text-black">Just the right amount of everything.
-                A new dual‑camera system captures more of what you see and love. The fastest chip ever in a smartphone and
-                all‑day battery life let you do more and charge less. And the highest‑quality video in a smartphone, so your
-                memories look better than ever.</small>
-              <div class="flex gap-0.5 mt-4">
-                <button id="addToCartButton"
-                  class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase px-8 py-3">add
-                  to cart</button>
-                <button id="likeButton"
-                  class="bg-indigo-600 hover:bg-indigo-500 focus:outline-none transition text-white uppercase p-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                    class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
-                  </svg>
+            <div class="flex pl-12 justify-start sm:justify-start mt-3">
+              <ul>
+                <li class="flex items-center">
+                  <div class="rounded-full p-2 fill-current text-green-700">
+                    <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">Free Shipping</span>
+                </li>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-green-700">
+                    <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">1 year warranty</span>
+                </li>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-green-700">
+                    <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">No Interest Installments</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="block flex items-center p-8  uppercase">
+              <button class="mt-3 text-lg font-semibold 
+    bg-pink-500 w-full text-white rounded-lg 
+    px-6 py-3 block shadow-xl hover:bg-pink-700">
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4">
+            <div class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden">
+              <div class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6">
+                <h1 class="text-lg font-medium uppercase p-3 pb-0 text-center tracking-wide">
+                  Tablets
+                </h1>
+                <h2 class="text-sm text-gray-500 text-center pb-6">Starting from $9 /mo</h2>
+
+                Everything from drawing tablets to Kindles to regular use tablets
+              </div>
+              <div class="flex flex-wrap mt-3 px-6">
+                <ul>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-green-700">
+                      <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">Variety</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-green-700">
+                      <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">Free Shipping</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-green-700">
+                      <svg class="w-6 h-6 align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">2-Year Warranty</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="block flex items-center p-8  uppercase">
+                <button class="mt-3 text-lg font-semibold 
+    bg-pink-500 w-full text-white rounded-lg 
+    px-6 py-3 block shadow-xl hover:bg-pink-700">
+                  Select
                 </button>
               </div>
             </div>
+          </div>
         </div>
-        </div>
-        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-        <label for="carousel-2" class="carousel-control next control-1">›</label>
-        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-        <label for="carousel-3" class="carousel-control next control-2">›</label>
-        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-        <label for="carousel-1" class="carousel-control next control-3">›</label>
-        <ol class="carousel-indicators">
-            <li>
-                <label for="carousel-1" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-2" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-3" class="carousel-bullet">•</label>
-            </li>
-        </ol>
+      </div>
     </div>
-</div>
-  </div>
+  </section>
+
+
+  <!-- <div>
+    <div class="wrapper">
+      <div class="parent" onclick="">
+        <div class="child bg-one">
+          <a href="#">Los Angeles</a>
+        </div>
+      </div>
+  </div> -->
 
   <script src="app.js" async defer></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
