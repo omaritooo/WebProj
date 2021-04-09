@@ -1,3 +1,24 @@
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2500)
+  .typeString('THE FUTURE IS <span class="text-pink-900 font-semibold">HERE</span>')
+  .pauseFor(1000)
+  .deleteChars(4)
+  .pauseFor(1000)
+  .typeString('<span class="text-pink-900 font-semibold">NOW</span>')
+  .deleteChars(3)
+  .pauseFor(1000)
+  .typeString('<span class="text-pink-900 font-semibold">READY</span>')
+  .pauseFor(1000)
+  .start();
+
+
 $(document).ready(function(){       
     var scroll_pos = 0;
     $(document).scroll(function() {
@@ -12,26 +33,13 @@ $(document).ready(function(){
 
 
 
-const likeButton = document.querySelector("#likeButton");
-    const addToCartButton = document.querySelector("#addToCartButton");
-    likeButton.addEventListener("click", ()=>{
-        likeButton.classList.toggle("text-red-400")
-    })
-    addToCartButton.addEventListener("click", ()=>{
-      const Toast = Swal.mixin({
-  toast: true,
-  position: 'top-end',
-  showConfirmButton: false,
-  timer: 3000,
-  timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.addEventListener('mouseenter', Swal.stopTimer)
-    toast.addEventListener('mouseleave', Swal.resumeTimer)
-  }
-})
 
-Toast.fire({
-  icon: 'success',
-  title: 'Added to cart'
-})
-    })
+
+function resizer()
+{
+  document.getElementById('barer').style.width = "90%";
+
+}
+
+
+
