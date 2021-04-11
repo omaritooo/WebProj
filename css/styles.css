@@ -73,7 +73,7 @@ header
 {
     background: #f25287;
     background-size: 400% 400%;
-    padding: 1rem;
+    /* padding: 1rem; */
     -webkit-animation: AnimationName 9s ease infinite;
     -moz-animation: AnimationName 9s ease infinite;
     animation: AnimationName 9s ease infinite;
@@ -154,8 +154,18 @@ header
         color: #f25287;
     }
 
-    
-
+    .progress-container {
+        width: 100%;
+        height: 6px;
+        background: #fff;
+      }
+      
+      /* The progress bar (scroll indicator) */
+      .progress-bar {
+        height: 6px;
+        background: #EF5288;
+        width: 0%;
+      }
     .imger
     {     background-origin: padding-box;
 
@@ -164,7 +174,7 @@ header
       rgba(255, 0, 128, 0.65), 
       rgba(255, 0, 221, 0.35)
     ),
-    url(https://i.imgur.com/vjdRvfz.png);
+    url(https://tradelinestores.s3.amazonaws.com/media/product_images/80df4526-ec11-4f12-9091-45b560454bc4.jpg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
