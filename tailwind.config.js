@@ -3,12 +3,8 @@ module.exports=
     plugins: [
         require('tailwindcss'),
         require('autoprefixer'),
-        require('@tailwindcss/forms'),
-        require('tailwindcss-animatecss')({
-            classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn', 'animate__lightSpeedOut'],
-            settings: {},
-            variants: ['responsive', 'hover', 'reduced-motion'],
-          }),
+        require('@tailwindcss/forms')
+        
     ],
     
     variants: {
