@@ -5,7 +5,7 @@
   "main": "index.js",
   "engines": {"npm":"14.x"},
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    
   },
   "keywords": [],
   "author": "",
